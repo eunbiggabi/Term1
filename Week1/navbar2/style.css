@@ -1,0 +1,106 @@
+:root {
+  --background-color: #263343;
+  --accent-color: #d49466;
+  --font-color: #eeee;
+  --normal-padding: 8px 12px;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  color: var(--font-color);
+}
+
+a {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  background-color: var(--background-color);
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--normal-padding);
+}
+
+.navbar__logo i {
+  color: var(--accent-color);
+  font-size: 24px;
+}
+
+.navbar__logo a {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar__menu li {
+  padding: var(--normal-padding);
+}
+
+.navbar__menu li:hover {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+
+.navbar__icons {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+.navbar__icons li {
+  padding: var(--normal-padding);
+  cursor: pointer;
+}
+
+.navbar__icons li:hover {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+
+.navbar__toggleBtn {
+  position: absolute;
+  right: 22px;
+  top: 18px;
+  font-size: 22px;
+  color: var(--accent-color);
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px 24px;
+    align-items: flex-start;
+  }
+
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar__icons {
+    display: none;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar__toggleBtn {
+    display: block;
+  }
+
+  .navbar__menu.active,
+  .navbar__icons.active {
+    display: flex;
+  }
+}
