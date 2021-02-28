@@ -1,0 +1,27 @@
+@import "config";
+@import "utilities";
+@import "buttons";
+
+.movie-card {
+  width: $width-card-img;
+  box-shadow: 1px 1px 5px lightgray;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: $primary-color;
+
+  img {
+    width: $width-card-img;
+  }
+
+  h2 {
+    color: $color-button-hearder;
+  }
+
+  p {
+    font: $italic-bold;
+  }
+
+  .movie-info {
+    padding: 10px;
+  }
+}
