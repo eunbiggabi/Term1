@@ -1,0 +1,30 @@
+$nav-first-color: red;
+$nav-second-color: green;
+
+nav {
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    .foo {
+      color: $nav-first-color;
+      background-color: $nav-second-color;
+    }
+
+    #about__me {
+      color: $nav-second-color;
+      background-color: $nav-first-color;
+    }
+
+    .bar {
+      color: $nav-first-color;
+      background-color: $nav-second-color;
+    }
+  }
+}
+
+h1 {
+  color: blue;
+  font-size: 70px;
+  font-style: italic;
+}
