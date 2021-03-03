@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Register as a New Patient</h1>
+    
+    <form action="">
+        <div class="full__name">
+            <label for="">Full Name</label>
+            <input type="text" name="fullname" placeholder="e.g eunkyu JEON" required>
+        </div>
+
+        <div class="radio" >
+            <strong>Gender</strong>
+            <div id="radio__box">
+                <!-- <div> -->
+                    <input type="radio" name="gender">
+                    <label class="">Male</label>
+                    
+                <!-- </div> -->
+                <!-- <div> -->
+                    <input type="radio" name="gender">
+                    <label class="">Female</label>
+                    
+                <!-- </div> -->
+                <!-- <div> -->
+                    <input type="radio" name="gender" checked>
+                    <label class="">Others</label>
+                <!-- </div> -->
+           </div>     
+        </div>
+
+        <div class="birth">
+            <label for="">Date of Birth</label>
+            <input type="date">
+        </div>
+
+        <div class="email">
+            <label for="">Email Address</label>
+            <input type="email" placeholder="Type Your Email" required>
+        </div>
+
+        <button type="button">Submit Details</button>
+    </form>
+</body>
+</html>

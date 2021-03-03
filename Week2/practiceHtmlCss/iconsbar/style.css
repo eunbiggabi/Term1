@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  height: 100px;
+  border-bottom: 1px solid rgb(184, 181, 181);
+}
+
+button {
+  display: flex;
+  font-size: 3rem;
+  margin: 20px;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  background: none;
+}
+
+button:hover {
+  color: blue;
+}

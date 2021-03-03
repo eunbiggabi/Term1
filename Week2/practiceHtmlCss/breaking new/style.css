@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(img/bananas.png);
+  text-align: justify;
+}
+
+.container {
+  width: 70%;
+  background-color: white;
+  margin: 0 auto;
+  height: 100vh;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}

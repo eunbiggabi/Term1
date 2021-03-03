@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: green;
+}
+
+nav ul {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 8px 12px;
+}
+
+a {
+  padding: 8px 12px;
+  color: gold;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: gold;
+  color: green;
+}

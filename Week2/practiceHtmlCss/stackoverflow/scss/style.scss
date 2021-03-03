@@ -1,0 +1,103 @@
+// color
+$line__color: rgba(201, 199, 197, 0.863);
+$accent__color: orange;
+$btn__background__color: rgb(233, 238, 243);
+
+//padding:
+$normal__padding: 0.5rem 0.75px;
+$large__padding: 1rem 1.5rem;
+
+//font-size
+$large__font: 1.25rem;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+// hearder
+
+header {
+  height: 60px;
+  border-bottom: 1px solid $line__color;
+  border-top: 3px solid $accent__color;
+
+  img {
+    margin-left: 20px;
+  }
+}
+
+// main
+
+.container {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr 0.6fr;
+
+  .nav {
+    border-right: 1px solid $line__color;
+
+    ul {
+      //   list-style: none;
+      //   padding: 0;
+
+      .home {
+        margin: 25px 0 20px 15px;
+        border-right: 3px solid orange;
+        background-color: $btn__background__color;
+        padding: 5px 0 5px 10px;
+        font-size: $large__font;
+      }
+
+      .public {
+        margin: 25px 0 15px 15px;
+        padding: 5px 0 0 10px;
+      }
+
+      ul {
+        margin: 0 0 15px 20px;
+        padding: 5px 0 0 30px;
+
+        li {
+          padding: $normal__padding;
+        }
+      }
+    }
+  }
+
+  .main {
+    .main__top {
+      border-bottom: 1px solid $line__color;
+
+      .main__top__first {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 
+      }
+
+      h3 {
+        margin-left: 20px;
+        font-size: 28px;
+        font-weight: 400;
+        width: 200px;
+      }
+
+      .btn__list {
+        text-align: right;
+      }
+    }
+
+    .main__bottom {
+      padding: $large__padding;
+    }
+  }
+}

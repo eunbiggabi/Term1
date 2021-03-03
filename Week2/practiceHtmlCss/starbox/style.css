@@ -1,0 +1,40 @@
+body {
+  margin: 0 auto;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+div {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+h1 {
+  align-self: flex-end;
+  margin-right: 30px;
+}
+
+th,
+td {
+  background-color: #dddddd;
+}
+
+/* .large {
+  width: 70%;
+}
+
+.medium {
+  width: 20%;
+}
+
+.small {
+  width: 20%;
+} */
+
+table {
+  table-layout: auto;
+  width: 300px;
+}

@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+}
+
+p {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid black;
+}
