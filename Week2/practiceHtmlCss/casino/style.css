@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-image: url(img/diagonal-squares.webp);
+  color: white;
+}
+
+.container {
+  background-color: red;
+  width: 70%;
+  margin: 0 auto;
+  opacity: 0.6;
+  padding: 8px 12px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav li {
+  padding: 8px 12px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  column-count: 3;
+  text-align: justify;
+  opacity: 1;
+}
