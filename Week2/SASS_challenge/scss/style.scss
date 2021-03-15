@@ -7,7 +7,7 @@
   box-shadow: 1px 1px 5px lightgray;
   border-radius: 15px;
   overflow: hidden;
-  background-color: $primary-color;
+  background-color: lighten($primary-color, 20%);
 
   img {
     width: $width-card-img;

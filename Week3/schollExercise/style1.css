@@ -1,0 +1,50 @@
+@keyframes colorful-text {
+  0% {
+    color: white;
+  }
+  25% {
+    color: red;
+  }
+  50% {
+    color: yellow;
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: blue;
+  }
+}
+
+#foo {
+  width: 200px;
+  height: 300px;
+  background-color: yellow;
+}
+
+#foo2 {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  transition: all 300ms ease-in;
+  /* transform: translateY(10px); */
+}
+
+#foo2:hover {
+  opacity: 0.7;
+  /* transform: translateY(0); */
+  transform: rotate(-15deg);
+}
+
+#foo:hover h2 {
+  animation: colorful-text 300ms;
+}
+
+h2 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

@@ -1,0 +1,173 @@
+commit 9750ada6ab591c51d2e10460a2ac649f491d54bb
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Thu Mar 11 19:59:11 2021 +1000
+
+    hope last touch
+
+commit 39f533d04e3c2fb3df090f7f48a92e61b7d2ee91
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Thu Mar 11 11:14:13 2021 +1000
+
+    5 blogs done
+
+commit d860a1547e9e71203f0d38d2cc0a319da557effb
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Wed Mar 10 14:07:02 2021 +1000
+
+    blog3
+
+commit ec4fbaa94e3fcd70d920b25468f38ba5b99bf5b2
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Tue Mar 9 20:58:32 2021 +1000
+
+    blog add it
+
+commit 85113ee53667501921aed6e5b3d328db4ff47759
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Tue Mar 9 13:27:41 2021 +1000
+
+    ppt chagned
+
+commit 2567ca76c5231f4328eda781be75d760e5551873
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Tue Mar 9 12:27:56 2021 +1000
+
+    test
+
+commit d8f6f22fc0dca160b62b3269f0446291ad5706f2
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Tue Mar 9 12:14:55 2021 +1000
+
+    ppt folder update
+
+commit cd4f2a6631c311fe0f15c2afee0a62de8b9a23ac
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Mon Mar 8 22:13:35 2021 +1000
+
+    Readme sitemap update
+
+commit 8b18035866e4a80f9d4c47db399005b45a08bae5
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Mon Mar 8 21:29:08 2021 +1000
+
+    corret sementag
+
+commit 4a01a9d977b1519eb526c7e04f018389f1638a26
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Mon Mar 8 15:28:26 2021 +1000
+
+    hamber menu bar insert
+
+commit c38e0024207165f27f5ed8b88e03de9a3db14f4b
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Sat Mar 6 21:40:11 2021 +1000
+
+    readme file update
+
+commit 84843382b840c4b5611520b74c7b2c1e3d086cfd
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Fri Mar 5 22:08:12 2021 +1000
+
+    before deploy
+
+commit 8ca5f98db2daec430a5ee1b66d6a57b58a379a55
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Fri Mar 5 21:26:58 2021 +1000
+
+    chaged to css
+
+commit a5e00fb97ff9b51d96073abab8774e5d72e21998
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Fri Mar 5 17:15:54 2021 +1000
+
+    need to change to css
+
+commit de9eeeacfe5e6f052423d4d0c7ff5f2a4c04e09b
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Fri Mar 5 14:46:04 2021 +1000
+
+    before media screen
+
+commit 5165c18c19232e256377a42cdefd9575f7aa256d
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Fri Mar 5 11:50:32 2021 +1000
+
+    css contact
+
+commit ce5e864229751a3ea21fbea78a4cbf18419edcb5
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Fri Mar 5 11:30:40 2021 +1000
+
+    work & testimonials
+
+commit e8f8fd5dd1caa4fcc7dde510ee1a381ef844fc60
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Thu Mar 4 23:28:07 2021 +1000
+
+    skills
+
+commit 257a0dea7cf99292929e1844cb6b89a13a7814bc
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Thu Mar 4 22:03:56 2021 +1000
+
+    css about portfolio
+
+commit d017f36b5e18b39d603dc740e1e440c46400d755
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Thu Mar 4 14:57:35 2021 +1000
+
+    scss typogrphy
+
+commit f41a6d83301f2106b29475a3d9a88ae2f5ffee89
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Thu Mar 4 14:49:28 2021 +1000
+
+    sscs variable set up
+
+commit 5cf9eb3a9a007f58614fcfa2046d68a13b5dd372
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Thu Mar 4 09:22:39 2021 +1000
+
+    testimonials html portfolio
+
+commit 49374897b70da96fb5826850113a56365295941b
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Thu Mar 4 09:15:48 2021 +1000
+
+    work html portfolio
+
+commit f792f4a5a630f23b2f14336d6ea701e26e8e61fd
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Wed Mar 3 22:56:54 2021 +1000
+
+    skill html portfolio
+
+commit 2ce27ca9f3e440d81b682fe9e1220c16c9df280a
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Wed Mar 3 22:12:37 2021 +1000
+
+    home portfolio html
+
+commit af1e867fad39426deafdf9a7e978acb6d71b42e4
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Wed Mar 3 21:19:31 2021 +1000
+
+    portfolio about HTML
+
+commit f8c46b5b4e6615124717fc9e0fc6b8c85c2d885c
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Wed Mar 3 21:12:13 2021 +1000
+
+    navbar HTML
+
+commit 3fbcda8cc15076529e61f19e83ea42259ff6b51b
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Wed Mar 3 21:04:58 2021 +1000
+
+    set up for portfolio HTML&SCSS
+
+commit af82321c9afa215d9bc0215ccf6b09e7b88a96ac
+Author: eunbiggabi <eunbiggabi84@gmail.com>
+Date:   Wed Mar 3 15:25:58 2021 +1000
+
+    first commit

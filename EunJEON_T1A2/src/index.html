@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyu's portfolio</title>
+    <meta name="description" content="Portfolio for software engineer Kyu">
+    <meta name="author" content="Kyu">
+    <link rel="icon" type="image/png" href="imgs/logo.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav id="navbar">
+            <div class="navbar__logo">
+                <i class="fab fa-atlassian"></i>
+                <a href="#">Kyu</a>
+            </div>
+    
+            <div id="menu" class="navbar__menu">
+                <ul class="navbar__menu">
+                    <li class="navbar__menu__item active" data-link='#home'>Home</li>
+                    <li class="navbar__menu__item" data-link="#about">About</li>
+                    <li class="navbar__menu__item" data-link="#skills">Skills</li>
+                    <li class="navbar__menu__item" data-link="#work">My work</li>
+                    <li class="navbar__menu__item" data-link="#blogs">Blogs</li>
+                    <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li>
+                    <li class="navbar__menu__item" data-link="#contact">Contact</li>
+                </ul>
+            </div>
+    
+            <!-- Toggle button -->
+            <button id="hamburger-menu" class="navbar__toggle-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+    
+        <!-- Home -->
+    <main>    
+        <section id="home">
+            <div class="section__container">
+                <img src="../imgs/profile.jpeg" alt="Kyu's profile photo" class="home__avatar">
+                <h1 class="home__title">Hello, <br />I'm Kyu</h1>
+                <h3 class="home__description">A Software Engineer currently residing in Brisbane, Australia</h3>
+                <button class="home__contact" data-link="#contact">Contact Me</button>
+            </div>
+        </section>
+    <!-- About -->
+        <section id="about">
+            <div class="section__container">
+            <h2>About me</h2>
+            <p>I am fairly easy going. I am willing to help anyone at any time. I do not like to be taken advantage of. See my resume link on below</p>
+            <a href="../docs/kyuResume.pdf" target="blank">Resume</a>
+            <div class="about__majors">
+                <div class="major">
+                    <div class="major__icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="major__title">HTML</div>
+                </div>
+                <div class="major">
+                    <div class="major__icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="major__title">CSS</div>
+                </div>
+                <div class="major">
+                    <div class="major__icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="major__title">JavaScript</div>
+                </div>
+            </div>
+
+            <div class="about__job">
+                <div class="job">
+                    <img src="../imgs/aboutMe/griffith.png" alt="griffith__logo" class="job__log">
+                    <div class="job__description">
+                        <p class="job__name">Griffith University</p>
+                        <p class="job__period">2005 - 2009</p>
+                    </div>                       
+                </div>
+                <div class="job">
+                    <img src="../imgs/aboutMe/inghams.jpeg" alt="inghams__logo" class="job__log">
+                    <div class="job__description">
+                        <p class="job__name">Inghams Enterprises</p>
+                        <p class="job__period">2010 - 2017</p>
+                    </div>
+                </div>
+                <div class="job">
+                    <img src="../imgs/aboutMe/mps.png" alt="mps__logo" class="job__log">
+                    <div class="job__description">
+                        <p class="job__name">Mps</p>
+                        <p class="job__period">20017 - 20021</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+<!-- Skills -->
+        <section id="skills">
+            <div class="section__container">
+                <h2>Skills</h2>
+                <h3>Skills & Attributes</h3>
+                <p>Passion for learning new technologies. Capable of working within a team environment and independently. Ability to plan and time schedule, work under strict time pressure and adapt quickly when needed.</p>
+                <div class="skillset">
+                    <div class="skillset__left">
+                        <h3 class="skillset__title">Skills</h3>
+                        <div class="skill">
+                            <div class="skill__description">
+                                <span>HTML</span>
+                                <span>80%</span>
+                            </div>
+                                <div class="skill__bar">
+                                    <div class="skill__value" style="width: 80%;"></div>
+                                </div>                    
+                        </div>
+                        <div class="skill">
+                            <div class="skill__description">
+                                <span>CSS</span>
+                                <span>70%</span>
+                            </div>
+                                <div class="skill__bar">
+                                    <div class="skill__value" style="width: 70%;"></div>
+                                </div>                    
+                        </div>
+                        <div class="skill">
+                            <div class="skill__description">
+                                <span>SCSS</span>
+                                <span>50%</span>
+                            </div>
+                                <div class="skill__bar">
+                                    <div class="skill__value" style="width: 50%;"></div>
+                                </div>                    
+                        </div>
+                        <div class="skill">
+                            <div class="skill__description">
+                                <span>JavaScript</span>
+                                <span>10%</span>
+                            </div>
+                                <div class="skill__bar">
+                                    <div class="skill__value" style="width: 10%;"></div>
+                                </div>                    
+                        </div>
+                        <div class="skill">
+                            <div class="skill__description">
+                                <span>TypeScript</span>
+                                <span>5%</span>
+                            </div>
+                                <div class="skill__bar">
+                                    <div class="skill__value" style="width: 5%;"></div>
+                                </div>                    
+                        </div>                        
+                    </div>
+                    <div class="skillset__right">
+                        <div class="tools">
+                            <h3 class="skillset__title">Tools</h3>
+                            <ul class="tools__list">
+                                <li><span>Visiual Studio Code</span></li>
+                                <li><span>Atom</span></li>
+                                <li><span>Sketch app</span></li>
+                                </ul>
+                        </div>
+                        <div class="etc">
+                            <h3 class="skillset__title">Etc</h3>
+                            <ul class="etc__list">
+                                <li><span>Git</span></li>
+                                <li><span>Math</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>               
+        </section>
+    <!-- Work -->
+        <section id="work">
+            <div class="section__container">
+            <h2>My work</h2>
+            <h3>Projects</h3>
+            <div class="work__categories">
+                <button class="category__btn active">All<span class="category__count">6</span></button>
+                <button class="category__btn">Forms<span class="category__count">2</span></button>
+                <button class="category__btn">Flex box<span class="category__count">2</span></button>
+                <button class="category__btn">Clone coding<span class="category__count">2</span></button>                   
+            </div>
+
+            <div class="work__projects">
+                <a href="https://github.com/eunbiggabi/form1" class="project" target="blank">
+                    <img src="../imgs/projects/form1.png" alt="survey__form1" class="project__img">
+                    <div class="project__description">
+                        <h3>Form 1</h3>
+                        <span>Practice form</span>
+                    </div>
+                </a>
+                <a href="https://github.com/eunbiggabi/form2" class="project" target="blank">
+                    <img src="../imgs/projects/form2.png" alt="survey__form2" class="project__img">
+                    <div class="project__description">
+                        <h3>Form 2</h3>
+                        <span>Practice form</span>
+                    </div>
+                </a>
+                <a href="https://github.com/eunbiggabi/flexbox1" class="project" target="blank">
+                    <img src="../imgs/projects/flexbox1.png" alt="flex__box1" class="project__img">
+                    <div class="project__description">
+                        <h3>Flex box 1</h3>
+                        <span>Practice flex-box</span>
+                    </div>
+                </a>
+                <a href="https://github.com/eunbiggabi/flexbox2" class="project" target="blank">
+                    <img src="../imgs/projects/flexbox2.png" alt="flex__box2" class="project__img">
+                    <div class="project__description">
+                        <h3>Flex box 2</h3>
+                        <span>Practice flex-box</span>
+                    </div>
+                </a>
+                <a href="https://github.com/eunbiggabi/cloneCoding1" class="project" target="blank" >
+                    <img src="../imgs/projects/clonecoding1.png" alt="Clone__coding1" class="project__img">
+                    <div class="project__description">
+                        <h3>Clone coding 1</h3>
+                        <span>Stack overflow clone coding</span>
+                    </div>
+                </a>
+                <a href="https://github.com/eunbiggabi/cloneCoding2" class="project" target="blank">
+                    <img src="../imgs/projects/clonecoding2.png" alt="Clone__coding2" class="project__img">
+                    <div class="project__description">
+                        <h3>Clone coding 2</h3>
+                        <span>Instagram clone coding</span>
+                    </div>
+                </a>
+            </div>
+            </div>
+        </section>
+
+    <!-- Blog  -->
+        <section id="blogs">
+            <div class="section__container">
+                <h2>Blogs</h2>
+                    <div class="blog__container">
+                        <div class="blog">
+                            <img src="../imgs/blog-images/I-love-blogers.jpg" alt="blogers__img" class="blog__img">
+                            <a href="/src/blogs-moreHTML/blog1.html" target="blank" class="blog__link">Blog 1</a>
+                        </div>
+                        <div class="blog">
+                            <img src="../imgs/blog-images/puzzles.jpg" alt="sport-player__img" class="blog__img">
+                            <a href="/src/blogs-moreHTML/blog2.html" target="blank" class="blog__link">Blog 2</a>
+                        </div>
+                        <div class="blog">
+                            <img src="../imgs/blog-images/modal.jpg" alt="princess__img" class="blog__img">
+                            <a href="/src/blogs-moreHTML/blog3.html" target="blank" class="blog__link">Blog 3</a>
+                        </div>
+                        <div class="blog">
+                            <img src="../imgs/blog-images/covid.webp" alt="princess__img" class="blog__img">
+                            <a href="/src/blogs-moreHTML/blog4.html" target="blank" class="blog__link">Blog 4</a>
+                        </div>
+                        <div class="blog">
+                            <img src="../imgs/blog-images/baby.jpg" alt="princess__img" class="blog__img">
+                            <a href="/src/blogs-moreHTML/blog5.html" target="blank" class="blog__link">Blog 5</a>
+                        </div>
+                    </div>       
+            </div>        
+        </section>
+
+    <!-- Testimonials -->
+        <section id="testimonials">
+            <div class="section__container">
+                <h2>Testimonials</h2>
+                <h3>See what they say about me</h3>
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <img src="../imgs/testimonials/face.jpg" alt="testimonial__avatar" class="testimonial__avatar">
+                        <div class="testimonial__speech-bubble">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam alias praesentium a esse aliquam nihil! Quas dolorum earum, eligendi minima suscipit repellat expedita sunt molestias, corporis placeat nemo cum facere?</p>
+                        </div>
+                    </div>
+                    <div class="testimonial">                     
+                        <div class="testimonial__speech-bubble">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam alias praesentium a esse aliquam nihil! Quas dolorum earum, eligendi minima suscipit repellat expedita sunt molestias, corporis placeat nemo cum facere?</p>
+                        </div>
+                        <img src="../imgs/testimonials/face.jpg" alt="testimonial__avatar" class="testimonial__avatar">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+     <footer>
+    <!-- Contact -->
+        <section id="contact">                
+            <div class="section__container">
+                <h2 class="contact__title">Let's talk</h2>
+                
+                <div class="contact__links">
+                    <a href="https://github.com/eunbiggabi" target="blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/eun-kyu-jeon-018370204?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BhmaCi9EaSUWA6deShKCP7Q%3D%3D" target="blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>                   
+        </section>
+    </footer>
+</body>
+</html>
