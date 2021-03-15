@@ -69,8 +69,34 @@
 
 function sorter(arr) {
 
-    
+//     let letSwap;
 
+//     for (let i = 0; i < arr.length; i++) {
+//         if(arr[i] > arr[i + 1]) {
+//             letSwap = arr[i]
+//             arr[i] = arr[i + 1]
+//             arr[i + 1] = letSwap
+//             i = 0
+//             // console.log(arr)
+//         }
+//     }
+//    return arr;
+
+    i = 0;
+    let letSwap;
+
+    while (i < arr.length) {
+        i++
+        if (arr[i] > arr[i + 1]) {
+            letSwap = arr[i]
+            arr[i] = arr[i + 1]
+            arr[i + 1] = letSwap
+            i = 0;
+        }
+    }
+    return arr;
 }
 
-console.log([5, 22, 29, 39, 19, 51, 78, 96, 84])
+console.log(sorter([5, 22, 29, 39, 19, 51, 78, 96, 84]))
+
+

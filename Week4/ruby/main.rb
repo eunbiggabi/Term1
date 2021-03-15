@@ -87,26 +87,40 @@
 # print fahrenheit
 # print "."
 
+# arr = [5, 22, 29, 39, 19, 51, 78, 96, 84]
+# i = 0
+
+#  while (i < arr.size - 1 && arr[i] < arr[i + 1]) 
+#      i += 1
+#      if (i < arr.size - 1 && arr[i] > arr[i + 1])
+#         # swap
+#          x = arr[i]
+#          arr[i] = arr[i + 1]
+#          arr[i + 1] = x 
+#          i = 0
+#      end
+#  end
+
+# print arr
+
+# arr = [5, 22, 29, 39, 19, 51, 78, 96, 84]
+
+# print arr.sort
+
 arr = [5, 22, 29, 39, 19, 51, 78, 96, 84]
 i = 0
 
- while (i < arr.size - 1 && arr[i] < arr[i + 1]) 
+ while (i < arr.length) 
      i += 1
-     if (i < arr.size - 1 && arr[i] > arr[i + 1])
+     if(arr[i] > arr[i + 1])
         # swap
-         x = arr[i]
+         letSwap = arr[i]
          arr[i] = arr[i + 1]
-         arr[i + 1] = x 
+         arr[i + 1] = letSwap
          i = 0
      end
  end
 
 print arr
 
-# arr = [5, 22, 29, 39, 19, 51, 78, 96, 84]
 
-# print arr.sort
-
-
-
-  
