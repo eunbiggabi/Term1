@@ -69,7 +69,7 @@
 
 # citizen = gets.chomp
 
-# puts citizen == "yes" ? "yes" : "no"
+# puts citizen == "yes" ? "You are eligible to vote!" : "You are ineligible to vote"
 
 # puts "The temperature in celsius is: "
 # celsius = gets.chomp.to_i
@@ -107,20 +107,119 @@
 
 # print arr.sort
 
-arr = [5, 22, 29, 39, 19, 51, 78, 96, 84]
-i = 0
+# arr = [5, 22, 29, 39, 19, 51, 78, 96, 84]
+# i = 0
 
- while (i < arr.length) 
-     i += 1
-     if(arr[i] > arr[i + 1])
-        # swap
-         letSwap = arr[i]
-         arr[i] = arr[i + 1]
-         arr[i + 1] = letSwap
-         i = 0
-     end
- end
+#  while (i < arr.length) 
+#      i += 1
+#      if(arr[i] > arr[i + 1])
+#         # swap
+#          letSwap = arr[i]
+#          arr[i] = arr[i + 1]
+#          arr[i + 1] = letSwap
+#          i = 0
+#      end
+#  end
 
-print arr
+# print arr
 
+# updated_shopping_list = [apple, orange, carret, cucumber, banana]
+
+# time = 8
+# good_student = true
+
+# if time > 10 || !good_student
+#     puts "You're late"
+# elsif time == 10
+#     puts "Right on time"
+# else
+#     puts "Good moring"
+# end
+
+# number = 4
+# if number > 3 then puts "Greater than 3" end
+
+# print "Enter you name: "
+# name = gets
+# # puts "Hello, #{name}"
+# value = 42
+# puts value.class
+
+# print "Enter a cardinal dirction(N, S, E, W)"
+
+
+# direction = gets.chomp.upcase
+# case direction
+# when "N"
+#     puts "North"
+# when "S"
+#     puts "South"
+# when "E"
+#     puts "East"
+# when "W"
+#     puts "West"
+# else 
+#     puts "no where"
+# end
+
+# age = 100
+# case age
+# when 1..12
+#     puts "Child"
+# when 13..17
+#     puts "Teenager"
+# when 18..1/0.0
+#     puts "Adult"
+# end
+
+# bright = false
+
+# puts bright ? "Turn donw the lights" : "It's dark in here"
+
+# numbers = [4, 5, 3, -7, 20, 0]
+# value = 5
+# check = numbers.include? value
+# puts check ? "Found in array" : "Not found in array"
+
+# names = ["lin", "nandini", "carl", "zeb", "janel", "varsha", "lavanya"]
+
+# i = 0;
+# while i < names.length
+#     i++
+
+# p names[i]
+# check = is_name_in_arry.include? names.name
+# put check ? "Found in array" : "Not found in array"
+
+
+# names = ["lin", "nandini", "carl", "zeb", "janel", "varsha", "lavanya"]
+
+# value = "foo"
+# names.each do |name|
+#      if name == value.downcase
+#         puts "Found in array" 
+#         break
+#      else
+#         puts "Not found in array" 
+#         break
+#   end
+# end
+
+# grocery_list.each_with_index do |item, index|
+#     puts "#{index+1}. #{item}"
+# end
+
+scores = [97, 42, 75]
+p scores.delete_if {|score| score < 80} 
+
+
+
+puts "finished"
+
+a = ["a", "b", "c", "d"]
+a.fill {|val| val + 1}
+p a.join("")
+
+x = a.join
+p x.split()
 

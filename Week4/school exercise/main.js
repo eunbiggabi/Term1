@@ -67,36 +67,158 @@
 //  }
 // console.log(arr)
 
-function sorter(arr) {
+// function sorter(arr) {
 
+// //     let letSwap;
+
+// //     for (let i = 0; i < arr.length; i++) {
+// //         if(arr[i] > arr[i + 1]) {
+// //             letSwap = arr[i]
+// //             arr[i] = arr[i + 1]
+// //             arr[i + 1] = letSwap
+// //             i = 0
+// //             // console.log(arr)
+// //         }
+// //     }
+// //    return arr;
+
+//     i = 0;
 //     let letSwap;
 
-//     for (let i = 0; i < arr.length; i++) {
-//         if(arr[i] > arr[i + 1]) {
+//     while (i < arr.length) {
+//         i++
+//         if (arr[i] > arr[i + 1]) {
 //             letSwap = arr[i]
 //             arr[i] = arr[i + 1]
 //             arr[i + 1] = letSwap
-//             i = 0
-//             // console.log(arr)
+//             i = 0;
 //         }
 //     }
-//    return arr;
+//     return arr;
+// }
 
-    i = 0;
-    let letSwap;
+// console.log(sorter([5, 22, 29, 39, 19, 51, 78, 96, 84]))
 
-    while (i < arr.length) {
-        i++
-        if (arr[i] > arr[i + 1]) {
-            letSwap = arr[i]
-            arr[i] = arr[i + 1]
-            arr[i + 1] = letSwap
-            i = 0;
+// function names(arr) {
+//     value = "Lin"
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] === value.toLowerCase()) {
+//             return "Found in array"
+//         } else {
+//             return  "Not found in array" 
+//         }
+//     }
+// }
+
+// function reverse(str) {
+
+   
+    // let rev = ""
+    // for (let i = str.length-1; i >= 0; i--) {
+    //     rev = rev + str[i]
+    // }    
+    // return rev;
+
+    // let rev = ""
+    // for (let i = 0; i < str.length; i++) {
+    //     rev = str[i] + rev
+    // }
+    // return rev;
+
+    // for (let char of str) {
+    //     reverStr = char + reverStr
+    // }
+    // return reverStr
+    // str.split("").forEach(char => reverStr = char + reverStr)
+    // return reverStr;
+    // const revSting = str.split("")
+//     const revString = str.split("").reverse().join("");
+//     return revString === str
+// } 
+
+// console.log(reverse("racar"))
+
+
+// prime number
+
+// for (let counter = 1; counter <= 100; counter++) {
+//     for ( i = 1; i <= counter-1; i++){
+//         if(counter % i == 0){
+//             console.log(counter)
+            
+//         }
+//     }
+    
+    
+//     // const notPrime = false;
+
+//     // for (let i = 2; i <= counter; i++) {
+//     //     if (counter%i===0 && i!==counter) {
+//     //         notPrime = true;
+//     //     }
+//     // }
+//     // if (notPrime === false) {
+//     //             console.log(counter);
+//     // }
+    
+// }
+
+//opposite way (!obj[friendId)
+
+// function analyseFriends(friends) {
+//   const obj = {};
+//   let arr = [];
+//   let highest = 0;
+
+//   for (let i = 0; i < friends.length; i++) {
+//     for (let j = 0; j < friends[i].length; j++) {
+//       let friendsId = friends[i][j];
+
+//       if (!obj[friendsId]) {
+//         obj[friendsId] = 0;
+//       }
+//       obj[friendsId]++;
+
+//       if (obj[friendsId] > highest) {
+//         highest = obj[friendsId];
+//       }
+//     }
+//   }
+
+//   for (let key in obj) {
+//     if (obj[key] === highest) {
+//       arr.push(key);
+//     }
+//   }
+//   return arr;
+// }
+
+// obj = {
+//     name: "kyu",
+//     last: "jeon"
+// }
+
+// if (obj["a"]) {
+//     console.log("has name")
+// } else {
+//     console.log("no name")
+// }
+
+function count_letter(input) {
+
+    let obj = {}
+
+    input.replace(" ","").split("").forEach(function(char) {
+        if(obj[char]){
+            obj[char]++
+        } else {
+            obj[char] = 1
         }
-    }
-    return arr;
+    })
+    return obj
 }
 
-console.log(sorter([5, 22, 29, 39, 19, 51, 78, 96, 84]))
+console.log(count_letter("Hello World"));
+
 
 
