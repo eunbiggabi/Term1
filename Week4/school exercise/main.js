@@ -204,21 +204,65 @@
 //     console.log("no name")
 // }
 
-function count_letter(input) {
+// function count_letter(input) {
 
-    let obj = {}
+//     let obj = {}
 
-    input.replace(" ","").split("").forEach(function(char) {
-        if(obj[char]){
-            obj[char]++
-        } else {
-            obj[char] = 1
+//     input.replace(" ","").split("").forEach(function(char) {
+//         if(obj[char]){
+//             obj[char]++
+//         } else {
+//             obj[char] = 1
+//         }
+//     })
+//     return obj
+// }
+
+// console.log(count_letter("Hello World"));
+
+
+// function showPrimeNum(num) {
+
+//     function isPrimeNum(i) {
+//         for(let j = 2; j < i; j++){
+//             if(i % j === 0) {
+//                 return false;
+//             }
+//         }
+//         return true;
+//     }
+
+//     for (let i = 2; i <= num; i++) {
+//         if(isPrimeNum(i)) {
+//             console.log(i)
+//         }
+//     }
+// }
+
+// showPrimeNum(100);
+
+function showPrimeNum(num) {
+
+    function isPrimeNum(i) {
+        for(let j = 2; j < i; j++){
+            console.log(`${j} : ${i}`)
+            // if(i % j === 0) {
+            //     return false;
+            // }
         }
-    })
-    return obj
+        // return true;
+    }
+
+    for (let i = 2; i <= num; i++) {
+        console.log((i))
+        if(isPrimeNum(i)) {
+            // console.log(i)
+        }
+    }
 }
 
-console.log(count_letter("Hello World"));
+showPrimeNum(10);
+
 
 
 

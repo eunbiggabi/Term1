@@ -209,17 +209,35 @@
 #     puts "#{index+1}. #{item}"
 # end
 
-scores = [97, 42, 75]
-p scores.delete_if {|score| score < 80} 
+# scores = [97, 42, 75]
+# p scores.delete_if {|score| score < 80} 
 
 
 
-puts "finished"
+# puts "finished"
 
-a = ["a", "b", "c", "d"]
-a.fill {|val| val + 1}
-p a.join("")
+# a = ["a", "b", "c", "d"]
+# a.fill {|val| val + 1}
+# p a.join("")
 
-x = a.join
-p x.split()
+# x = a.join
+# p x.split()
+
+# explicitly assigning vales to variables 
+a = "Hello World"
+b = 2
+c = true
+d = [1, "hi", false, 2.0]
+e = {}
+f = { }
+
+
+# printing class of the variables
+puts "#{a} : #{a.class}"
+puts "#{b} : #{b.class}"
+puts "#{c} : #{c.class}"
+puts "#{d} : #{d.class}"
+puts "#{e} : #{e.class}"
+puts "#{f} : #{f.class}"
+puts "#{g} : #{g.class}"
 

@@ -57,9 +57,23 @@
 #     puts "#{index}. #{item}"
 # end
 
-i = 0
-while (i < 5)
-    i += 1
-    puts i
-end
+# i = 0
+# while (i < 5)
+#     i += 1
+#     puts i
+# end
 
+# arr = [5, 22, 29, 39, 19, 51, 78, 96, 84]
+# i = 0
+
+#  while (i < arr.size - 1 && arr[i] < arr[i + 1]) 
+#      i += 1
+#      if (i < arr.size - 1 && arr[i] > arr[i + 1])
+#          swap = arr[i]
+#          arr[i] = arr[i + 1]
+#          arr[i + 1] = swap 
+#          i = 0
+#      end
+#  end
+
+# print arr
