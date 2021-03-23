@@ -241,28 +241,35 @@
 
 // showPrimeNum(100);
 
-function showPrimeNum(num) {
+// function showPrimeNum(num) {
 
-    function isPrimeNum(i) {
-        for(let j = 2; j < i; j++){
-            console.log(`${j} : ${i}`)
-            // if(i % j === 0) {
-            //     return false;
-            // }
-        }
-        // return true;
-    }
+//     function isPrimeNum(i) {
+//         for(let j = 2; j < i; j++){
+//             console.log(`${j} : ${i}`)
+//             // if(i % j === 0) {
+//             //     return false;
+//             // }
+//         }
+//         // return true;
+//     }
 
-    for (let i = 2; i <= num; i++) {
-        console.log((i))
-        if(isPrimeNum(i)) {
-            // console.log(i)
-        }
-    }
-}
+//     for (let i = 2; i <= num; i++) {
+//         console.log((i))
+//         if(isPrimeNum(i)) {
+//             // console.log(i)
+//         }
+//     }
+// }
 
-showPrimeNum(10);
+// showPrimeNum(10);
 
+// function get_last_two_name(names) {
+//     // if (names.length  <= 2) return names
+//     return names.slice(-2)
+// }
 
+// console.log(get_last_two_name(["sara", "james", "martha", "charlie"]))
+// console.log(get_last_two_name(["sara", "james"]))
+// console.log(get_last_two_name([]))
 
 

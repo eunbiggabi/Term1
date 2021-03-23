@@ -223,21 +223,226 @@
 # x = a.join
 # p x.split()
 
-# explicitly assigning vales to variables 
-a = "Hello World"
-b = 2
-c = true
-d = [1, "hi", false, 2.0]
-e = {}
-f = { }
+# # explicitly assigning vales to variables 
+# a = "Hello World"
+# b = 2
+# c = true
+# d = [1, "hi", false, 2.0]
+# e = { :name => "Alice", :age => 30}
+# f = :bye
 
 
-# printing class of the variables
-puts "#{a} : #{a.class}"
-puts "#{b} : #{b.class}"
-puts "#{c} : #{c.class}"
-puts "#{d} : #{d.class}"
-puts "#{e} : #{e.class}"
-puts "#{f} : #{f.class}"
-puts "#{g} : #{g.class}"
+# # printing class of the variables
+# puts "#{a} : #{a.class}"
+# puts "#{b} : #{b.class}"
+# puts "#{c} : #{c.class}"
+# puts "#{d} : #{d.class}"
+# puts "#{e} : #{e.class}"
+# puts "#{f} : #{f.class}"
+
+
+    
+# books_array = [{
+#     title: "Harry Potter",
+#     author: "J.K.Rowling",
+#     year: 1997
+# },
+# {
+#     title: "Carry Potter",
+#     author: "kyu",
+#     year: 1984
+# },
+# {
+#     title: "Hot Potter",
+#     author: "chloe",
+#     year: 2016
+# }]
+  
+# books_array.each do |book| 
+#     print "#{book[:title]} by #{book[:author]} (#{book[:year]})\n"
+# end
+
+
+# raining = [ "yes", "no" ] 
+
+# puts "Hey there, is it raining right now? (yes or no)"
+# raining= gets.chomp.downcase
+
+# puts "what is the temperature in celsius right now? (number)"
+# temperature_celsius = gets.chomp.to_i
+
+# if raining == "yes" && temperature_celsius < 15 
+#     print "It’s wet and cold" 
+# elsif raining == "no" && temperature_celsius < 15
+#     print "It’s not raining but cold"
+# elsif raining == "no" && temperature_celsius >= 15 
+#     print "It’s warm but not raining"
+# else 
+#     print "It’s warm and raining"
+# end
+
+
+# def get_last_two_names(names)
+#     return names.last(2) 
+# end
+# puts get_last_two_names(["sara", "james", "martha", "charlie"])
+# puts get_last_two_names(["sara", "james"])
+# puts get_last_two_names([])
+
+
+# puts 2 + nil == error
+
+# name = []
+# puts name.length
+
+#Your code here
+# def facebook_likes(names)
+    
+#         if(names.empty?)
+#             puts "\"No one likes this\""
+#         elsif(names.length == 1)
+#             puts "\"#{names[0]} likes this\""
+#         elsif(names.length == 2)
+#             puts "\"#{names[0]} and #{names[1]} like this\""
+#         elsif(names.length == 3)
+#             puts "\"#{names[0]}, #{names[1]} and #{names[2]} like this\""
+#         else
+#             puts "\"#{names[-1]}, #{names[-2]} and #{names.length} others like this\""
+#         end
+    
+
+# end
+
+# facebook_likes([])
+
+# facebook_likes(["Alex"])
+
+
+
+# facebook_likes(["Alex", "Nandini"])
+
+# facebook_likes(["Alex", "Garret", "Paul"])
+
+# facebook_likes(["Alex", "Garret", "Paul", "Aleisha", "Sarah", "Macey"])
+
+
+# coding_skill_score = {
+#     python: 1,
+#     ruby: 2,
+#     bash: 4,
+#     git: 8,
+#     html: 16,
+#     tdd: 32,
+#     css: 64,
+#     javascript: 128
+# }
+
+# scores_array = coding_skill_score.values.to_a
+
+
+# #Welcome message
+# puts "What is your coding skills"
+# print "Here are the possible scores for coding tested\n"
+# print scores_array
+# puts '.'
+
+# puts "Please type your max score to find out what coding skill you are"
+
+# # Find the coding skills based on max score
+
+
+# def coding_skill
+# items = []
+# score = gets.chomp.to_i
+#     while score > 0 do
+#         coding_skill_score.each do |key, value|
+#             if value <= score and 2 * value > score
+#                     items.push(key)
+#                     score -= value
+#             else
+#                     next
+#             end
+#         end
+#     end
+# puts "your score is: " 
+# return items
+# end
+
+# puts coding_skill()
+
+# coding_skill_score = {
+#     python: 1,
+#     ruby: 2,
+#     bash: 4,
+#     git: 8,
+#     html: 16,
+#     tdd: 32,
+#     "css" => 64,
+#     javascript: 128
+# }
+
+
+# def get_skills(skill)
+#     return skill.keys
+# end 
+
+# def get_score(score, key)
+#     return score[key]
+# end
+
+
+# puts "Check your overall coding skills"
+# puts get_skills(coding_skill_score)
+# puts "Enter what you can do?"
+# prompt = gets.chomp.downcase
+# if coding_skill_score.include?(prompt.to_s)
+#     puts "The #{prompt} is weighted as a #{get_score(score, key)} in ACME Corporation"
+# else
+#     puts "You entered an invalid coding skill"
+# end
+
+# puts get_skills()
+# puts get_score()
+
+
+
+# scores_array = coding_skill_score.values.to_a
+
+
+
+def get_input(num)
+    arr = []
+    num.times { arr.push(gets.chomp) }
+    return arr
+end
+
+
+
+puts "Enter how many you can do among these list (type number)"
+puts num = gets.chomp.to_i 
+get_input(num)
+
+
+
+
+# puts "enter your name"
+# puts a = gets.chomp
+# puts b = gets.chomp
+# puts c = gets.chomp
+# puts d = gets.chomp
+# puts a 
+# puts b 
+# puts c
+# puts d
+
+
+
+
+
+
+
+
+
+
+
 
