@@ -408,32 +408,56 @@
 
 # scores_array = coding_skill_score.values.to_a
 
+coding_skill_score = {
+    python: 1,
+    ruby: 2,
+    bash: 4,
+    git: 8,
+    html: 16,
+    tdd: 32,
+    css: 64,
+    javascript: 128
+}
 
 
 def get_input(num)
     arr = []
-    num.times { arr.push(gets.chomp) }
+    num.times { arr.push(gets.chomp) } 
+    arr.map! { |char| char.to_sym }
     return arr
 end
 
+def get_score(score, list_of_keys)
+    total = 0
+    list_of_keys.each do |key|
+        total += score[key]
+    end
+    return total
+end
 
+def get_skills(skill)
+    skill.keys
+end
 
+def get_requirements(requirements, list_of_keys)
+    return requirements.delete_if {|req| list_of_keys.include?(req)}
+    
+end
+
+list = get_skills(coding_skill_score)
 puts "Enter how many you can do among these list (type number)"
-puts num = gets.chomp.to_i 
-get_input(num)
+num = gets.chomp.to_i 
+puts "Enter what you can do one by one"
+list_keys = get_input(num)
+puts "Your overall score for ACME Corporation is #{get_score(coding_skill_score, list_keys)}"
+puts get_requirements(list, list_keys)
 
 
 
 
-# puts "enter your name"
-# puts a = gets.chomp
-# puts b = gets.chomp
-# puts c = gets.chomp
-# puts d = gets.chomp
-# puts a 
-# puts b 
-# puts c
-# puts d
+# puts coding_skill_score[:css]
+# get_score(coding_skill_score, :css)
+
 
 
 
