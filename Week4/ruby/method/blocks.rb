@@ -27,4 +27,3 @@ def add(num1, num2)
     end
     
 puts "The answer is #{add(5, 10)}"
-jhgffbnmuhj0oq/.,mnbvcxz
