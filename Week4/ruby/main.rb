@@ -419,7 +419,6 @@ coding_skill_score = {
     javascript: 128
 }
 
-
 def get_input(num)
     arr = []
     num.times { arr.push(gets.chomp) } 
@@ -441,22 +440,26 @@ end
 
 def get_requirements(requirements, list_of_keys)
     return requirements.delete_if {|req| list_of_keys.include?(req)}
-    
 end
 
+def show_result(requirements, you_need)
+    num_array = []
+    you_need.each { |item| num_array.push(requirements[item])}
+    p num_array
+end
+
+puts coding_skill_score.keys
 list = get_skills(coding_skill_score)
 puts "Enter how many you can do among these list (type number)"
 num = gets.chomp.to_i 
-puts "Enter what you can do one by one"
+puts "Enter what you can do (type one by one)"
 list_keys = get_input(num)
 puts "Your overall score for ACME Corporation is #{get_score(coding_skill_score, list_keys)}"
-puts get_requirements(list, list_keys)
+puts what_you_need = get_requirements(list, list_keys)
+show_result(coding_skill_score, what_you_need)
+puts "The rest of the skills shown above are required from the ACME Corporation, and weighted as following numbers cheer up~!"
 
 
-
-
-# puts coding_skill_score[:css]
-# get_score(coding_skill_score, :css)
 
 
 
