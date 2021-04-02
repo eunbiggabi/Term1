@@ -1,3 +1,21 @@
+class RandomSentence
+
+    def initialize
+        
+    end
+
+    def sentences_beginner 
+    [
+        ["I am super strong"],
+        ["So cool guys"],
+        ["Hello World"],
+        ["Who am I"],
+        ["My name is Kyu"]
+    ]
+    end 
+
+end
+
 class IsCorrect
     attr_accessor :word_display, :word_input
 
@@ -8,8 +26,6 @@ class IsCorrect
 
     def is_equal
         p @word_display == @word_input ? true : false
-        p @word_display
-        p @word_input
     end
 end
 
@@ -18,10 +34,15 @@ def sentence_random_sort(words)
 end
 
 
-puts sentence = sentence_random_sort(["Hi, I am Kyu", "Hello, World", "I am super Strong"].shuffle)
-input = gets.chomp
-check = IsCorrect.new(sentence, input)
-puts check.is_equal
+game = RandomSentence.new
 
-kyu = ["Hello, World"]
-p kyu.join("")
+
+loop do
+    puts "Do you want to start typing-game? (Y/N)"
+    answer = gets.chomp.downcase
+    break if answer != "y"
+    puts @word_display = game.sentences_beginner.sample.join('')
+    @word_input = gets.chomp
+    check = IsCorrect.new(@word_display, @word_input)
+    check.is_equal 
+end
