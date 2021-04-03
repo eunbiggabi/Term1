@@ -1,57 +1,37 @@
 require 'stop_watch'
 require 'csv'
 
-    def is_equal (display, input)
-        return display == input ? true : false
-        # p @word_display
-        # p @word_input
-    end
+game_level = {
+    "easy" =>  [[
+                    ["I am super strong"],
+                    ["So cool guys"],
+                    ["Hello World"],
+                    ["Who am I"],
+                    ["My name is Kyu"]
+                ], 10], 
+    "medium" => [[
+                    ["medium I am super strong"],
+                    ["medium So cool guys"],
+                    ["medium Hello World"],
+                    ["medium Who am I"],
+                    ["medium My name is Kyu"]
+                ], 20],
+    "hard"  =>  [[
+                    ["hard medium I am super strong"],
+                    ["hard medium So cool guys"],
+                    ["hard medium Hello World"],
+                    ["hard medium Who am I"],
+                    ["hard medium My name is Kyu"]
+                ], 30]
+}
+
+def is_equal (display, input)
+    return display == input ? true : false
+end
 
 watch = StopWatch::Timer.new
 users = {}
 survivors = []
-
-# get ID
-
-# file = File.open("users.csv", "a")
-# file << "#{users[:user_id]}\n"
-
-def game_level(level)
-    case level.downcase
-    when == "easy" 
-        def easy_level
-            [
-                ["I am super strong"],
-                ["So cool guys"],
-                ["Hello World"],
-                ["Who am I"],
-                ["My name is Kyu"]
-            ]
-        end
-    when == "medium" 
-        def medium_level
-            [
-                ["medium I am super strong"],
-                ["medium So cool guys"],
-                ["medium Hello World"],
-                ["medium Who am I"],
-                ["medium My name is Kyu"]
-            ]
-        end
-    when == "hard"
-        def hard_level
-            [
-                ["hard medium I am super strong"],
-                ["hard medium So cool guys"],
-                ["hard medium Hello World"],
-                ["hard medium Who am I"],
-                ["hard medium My name is Kyu"]
-            ]
-        end
-    else
-        puts "Invalid input"
-    end
-end
 
 begin
     puts "Enter ID you want to use"
@@ -66,7 +46,7 @@ begin
     system 'clear'
     if input == "s"
         watch.mark
-        puts word_display = easy_level.sample.join('')
+        puts word_display = game_level[level][0].sample.join('')
         word_input = gets.chomp
         # stop-watch stop
         check = is_equal(word_display, word_input)
@@ -80,7 +60,7 @@ begin
                 
             CSV.open("users.csv", "a+") {
                 |csv| csv.each do |line|
-                    if line[1].to_i < 10
+                    if line[1].to_i < game_level[level][1]
                         survivors << line
                     end    
                 end
