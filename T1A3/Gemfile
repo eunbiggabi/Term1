@@ -9,3 +9,5 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 gem "stop_watch", "~> 1.0"
 
 gem "simple-random", "~> 1.0"
+
+gem "faker", "~> 2.17"

@@ -1,6 +1,11 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    concurrent-ruby (1.1.8)
+    faker (2.17.0)
+      i18n (>= 1.6, < 2)
+    i18n (1.8.10)
+      concurrent-ruby (~> 1.0)
     simple-random (1.0.3)
     stop_watch (1.0.0)
 
@@ -8,6 +13,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  faker (~> 2.17)
   simple-random (~> 1.0)
   stop_watch (~> 1.0)
 
