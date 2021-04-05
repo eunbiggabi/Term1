@@ -6,6 +6,7 @@ quit = false
 confirmed = false
 game_ready_to_start = false
 other_input = false
+leader_board = false
 user = {}
 arr_csv = []
 
@@ -14,60 +15,18 @@ arr_csv = []
 
 
     watch = StopWatch::Timer.new
-    # easy_display = Faker::Lorem.sentence
     easy_display = "hi"
 
-    # def is_equal (display, input)
-    #     return display == input ? true : false
-    # end
-
-    # ready_to_go = false
-    # until ready_to_go
-    #     puts "Enter \"s\" when you ready to go"
-    #     start_input = ""
-    #     while start_input == ""
-    #         start_input = gets.chomp.downcase
-    #         if start_input == "s"
-    #             game_ready_to_start = true 
-    #         end
-    #     end
-    #     if game_ready_to_start
-    #         system 'clear'
-    #         puts easy_display
-    #         watch.mark ## Check time
-    #         easy_input = gets.chomp
-    #         watch.mark ## Check time
-    #         check = is_equal(easy_display, easy_input)
-    #         if check 
-    #             watch.mark
-    #             puts check_time = watch.mark.join('').to_i.ceil
-    #             # user[:check_time] = check_time
-    #             # File.open("easy_level.csv", "a+"){
-    #             #     |file| file.write("#{user_id},#{check_time}\n")
-    #             # }
-    #         else
-    #             puts "your input is wrong"
-    #         end
-    #         ready_to_go = true
-    #     end
-    # end
-    
-# end
-
-def before_start
-
-end
-
-def easy_display
-    puts Faker::Lorem.sentence
-end
-
 def medium_one
-    puts "#{Faker::Lorem.sentence} #{Faker::Lorem.sentence}"
+    return "#{Faker::Lorem.sentence} #{Faker::Lorem.sentence}"
 end
 
 def hard_one
-    puts Faker::Lorem.paragraph
+    return Faker::Lorem.paragraph
+end
+
+def leader(board)
+    p board
 end
 
 
@@ -127,35 +86,61 @@ until quit
             end
             if game_ready_to_start
                 system 'clear'
-                puts easy_display
+                puts easy_display = Faker::Lorem.sentence
                 watch.mark ## Check time
                 easy_input = gets.chomp
                 watch.mark ## Check time
-                check = is_equal(easy_display, easy_input)
+                puts check = is_equal(easy_display, easy_input)
                 if check 
                     watch.mark
                     check_time = watch.mark.join('').to_i.ceil
                     user[:check_time] = check_time
                     puts "#{user_id} made #{check_time} seconds"
                     ####################
-                    # File.open("easy_level.csv", "a+"){
-                    #     |file| file.write("#{user_id},#{check_time}\n")
-                    # }
-                    # CSV.open("easy_level.csv", "r") {
-                    #     |csv| csv.each do |line|
-                    #         # if line[1].to_i < game_level[level][1]
-                    #         #     survivors << line
-                    #         # end 
-                    #         arr_csv << line
-                    #     end
-                    #     arr_csv.each {|user_time| puts "#{user_time[0]} made #{user_time[1]} seconds"}
-                    # }
-                    #####################
+                    File.open("easy_level.csv", "a+"){
+                        |file| file.write("#{user_id},#{check_time}\n")
+                    }
+                    CSV.open("easy_level.csv", "r") {
+                        |csv| csv.each do |line|
+                            arr_csv << line
+                        end
+                        top_5 = arr_csv.sort { |a, b| a[1].to_i - b[1].to_i }.take(5)
+                        user_line = ["#{user_id}", "#{check_time}"]
+                        if top_5.include?(user_line)
+                            puts "You are on Top 5"
+                        else
+                            puts "You couldn't make Top 5"
+                        end
+                    }
                 else
                     puts "your input is wrong"
                 end
                 ready_to_go = true
             end
+#############################
+            leader_board_option = ""
+                while leader_board_option == ""
+                    puts "Do you want to see leader board?"
+                    puts "option: [ yes, no ]"
+                    leader_board_option = gets.chomp.downcase
+                    if leader_board_option == "yes"
+                        leader_board = true
+                    else
+                        puts "Thank you for playing"
+                    end
+                end
+                if leader_board
+                    # CSV.open("easy_level.csv", "r") {
+                    #     |csv| csv.each do |line|
+                    #         arr_csv << line
+                    #     end
+                    #     top_5 = arr_csv.sort { |a, b| a[1].to_i - b[1].to_i }.take(5)
+                    #     p top_5
+                    # }
+                    p top_5 
+                end
+
+#############################
         end
         ###################
         when "medium"
