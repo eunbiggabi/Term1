@@ -9,25 +9,26 @@ other_input = false
 leader_board = false
 user = {}
 arr_csv = []
+arr2_csv = []
 
 
 # def easy_level
 
 
     watch = StopWatch::Timer.new
-    easy_display = "hi"
 
-def medium_one
-    return "#{Faker::Lorem.sentence} #{Faker::Lorem.sentence}"
-end
 
-def hard_one
-    return Faker::Lorem.paragraph
-end
+# def medium_one
+#     return "#{Faker::Lorem.sentence} #{Faker::Lorem.sentence}"
+# end
 
-def leader(board)
-    p board
-end
+# def hard_one
+#     return Faker::Lorem.paragraph
+# end
+
+# def leader(board)
+#     p board
+# end
 
 
 # game = GameD.new
@@ -105,6 +106,7 @@ until quit
                             arr_csv << line
                         end
                         top_5 = arr_csv.sort { |a, b| a[1].to_i - b[1].to_i }.take(5)
+                        p top_5
                         user_line = ["#{user_id}", "#{check_time}"]
                         if top_5.include?(user_line)
                             puts "You are on Top 5"
@@ -130,14 +132,13 @@ until quit
                     end
                 end
                 if leader_board
-                    # CSV.open("easy_level.csv", "r") {
-                    #     |csv| csv.each do |line|
-                    #         arr_csv << line
-                    #     end
-                    #     top_5 = arr_csv.sort { |a, b| a[1].to_i - b[1].to_i }.take(5)
-                    #     p top_5
-                    # }
-                    p top_5 
+                    CSV.open("easy_level.csv", "r") {
+                        |csv| csv.each do |line|
+                            arr2_csv << line
+                        end
+                        check_top_5 = arr2_csv.sort { |a, b| a[1].to_i - b[1].to_i }.take(5)
+                        p check_top_5
+                    } 
                 end
 
 #############################

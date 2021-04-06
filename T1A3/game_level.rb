@@ -9,34 +9,24 @@ other_input = false
 leader_board = false
 user = {}
 arr_csv = []
+arr2_csv = []
 
 
 # def easy_level
 
 
     watch = StopWatch::Timer.new
-    easy_display = "hi"
-
-def medium_one
-    return "#{Faker::Lorem.sentence} #{Faker::Lorem.sentence}"
-end
-
-def hard_one
-    return Faker::Lorem.paragraph
-end
-
-def leader(board)
-    p board
-end
 
 
-# game = GameD.new
-# game.easy_display
-# game.medium_one
-
-def is_equal (display, input)
-    return display == input ? true : false
-end
+# def medium_one
+#     return "#{Faker::Lorem.sentence} #{Faker::Lorem.sentence}"
+# end
+# def hard_one
+#     return Faker::Lorem.paragraph
+# end
+# def leader(board)
+#     p board
+# end
 
 puts "Typing game will help you to learn how to type"
 puts "Type what you can see on the screen (Case-sensitive)"
@@ -67,7 +57,6 @@ until quit
     if confirmed 
         puts "Hello #{user[:user_id]}, you can choose game level"    
         puts "option: [easy, medium, hard, quit]"
-
         level_input = gets.chomp.downcase
         case level_input
         when "quit"
@@ -86,9 +75,12 @@ until quit
             end
             if game_ready_to_start
                 system 'clear'
-                puts easy_display = Faker::Lorem.sentence
                 watch.mark ## Check time
-                easy_input = gets.chomp
+                #################
+                # easy_display = Faker::Lorem.sentence
+                # easy_input = gets.chomp
+                repeat_display
+                #####################
                 watch.mark ## Check time
                 puts check = is_equal(easy_display, easy_input)
                 if check 
@@ -105,6 +97,7 @@ until quit
                             arr_csv << line
                         end
                         top_5 = arr_csv.sort { |a, b| a[1].to_i - b[1].to_i }.take(5)
+                        p top_5
                         user_line = ["#{user_id}", "#{check_time}"]
                         if top_5.include?(user_line)
                             puts "You are on Top 5"
@@ -130,14 +123,13 @@ until quit
                     end
                 end
                 if leader_board
-                    # CSV.open("easy_level.csv", "r") {
-                    #     |csv| csv.each do |line|
-                    #         arr_csv << line
-                    #     end
-                    #     top_5 = arr_csv.sort { |a, b| a[1].to_i - b[1].to_i }.take(5)
-                    #     p top_5
-                    # }
-                    p top_5 
+                    CSV.open("easy_level.csv", "r") {
+                        |csv| csv.each do |line|
+                            arr2_csv << line
+                        end
+                        check_top_5 = arr2_csv.sort { |a, b| a[1].to_i - b[1].to_i }.take(5)
+                        p check_top_5
+                    } 
                 end
 
 #############################
