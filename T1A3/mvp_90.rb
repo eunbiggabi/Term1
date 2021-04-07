@@ -16,6 +16,16 @@ def validate_input(message, incorrect_message)
     end
 end
 
+def get_leader_board(user_storage)
+    leader_board_array = []
+        CSV.open(user_storage, "r") {
+            |csv| csv.each do |line|
+                leader_board_array << line
+            end
+            leader_board_array.sort { |a, b| a[1].to_i - b[1].to_i }.take(5)
+        }
+end
+
 def display(level, user, user_storage)
     watch = StopWatch::Timer.new
     arr_csv = []
@@ -32,19 +42,12 @@ def display(level, user, user_storage)
         File.open(user_storage, "a+"){
             |file| file.write("#{user[:user_id]},#{user[:check_time]}\n")
         }
-        CSV.open(user_storage, "r") {
-            |csv| csv.each do |line|
-                arr_csv << line
-            end
-            top_5 = arr_csv.sort { |a, b| a[1].to_i - b[1].to_i }.take(5)
-            p top_5
-            user_line = ["#{user[:user_id]}", "#{user[:check_time]}"]
-            if top_5.include?(user_line)
-                puts "You are on Top 5"
-            else
-                puts "You couldn't make Top 5"
-            end
-        }
+        user_line = ["#{user[:user_id]}", "#{user[:check_time]}"]
+        if get_leader_board(user_storage).include?(user_line)
+            puts "You are on Top 5"
+        else
+            puts "You couldn't make Top 5"
+        end
     else
         puts "You are wrong"
     end
@@ -93,13 +96,7 @@ until quit
             end
             leader = validate_input("Do you want to see leader boader\noption: [yes, no]", "Invailed input")
             if leader == "yes"
-                CSV.open("easy_level.csv", "r") {
-                    |csv| csv.each do |line|
-                        arr2_csv << line
-                    end
-                    check_top_5 = arr2_csv.sort { |a, b| a[1].to_i - b[1].to_i }.take(5)
-                    p check_top_5
-                } 
+                get_leader_board()
                 puts "Thank you for playing"
                 the_user_wants_to_quit = true
             else
