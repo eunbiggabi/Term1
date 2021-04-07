@@ -45,7 +45,6 @@ until quit
     user_id = ""
     while user_id == ""
         # asking for first_id
-        
         puts "Enter ID you want to use"
         user_id = gets.chomp
         if user_id == ""
@@ -154,3 +153,4 @@ until quit
             quit = true
     end
 end
+

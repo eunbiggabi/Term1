@@ -7,8 +7,6 @@ require 'faker'
 # end
 
 def validate_input(message, incorrect_message)
-    user = {} 
-
     input = ""
     while input == ""
         puts message
@@ -16,30 +14,13 @@ def validate_input(message, incorrect_message)
         if input == ""
             puts incorrect_message
         else
-            user[:input] = input
+            return input
         end
     end
-    return user
-end
-
-def option_input(message, option_message)
-    user_id = validate_input("Enter ID you want to use", "You must enter a User ID")
-    confirmed = false
-
-    confirm_id = ""
-    while confirm_id == ""
-        puts "#{message}, #{user_id[:input]}"
-        puts option_message
-        confirm_id = gets.chomp.downcase
-        if confirm_id == "yes"
-            confirmed = true
-        end
-    end
-    return confirmed
 end
 
 def get_game_level(ready_to_select)
-    puts "Hello, you can choose game level"    
+    puts    
     puts "option: [easy, medium, hard, quit]"
     if ready_to_select
         level_input = gets.chomp.downcase
@@ -48,7 +29,6 @@ def get_game_level(ready_to_select)
 end
 
 def get_to_start(ready)
-    puts "Enter \"s\" when you ready to go"
     start_input = ""
     while start_input == ""
         start_input = gets.chomp.downcase
@@ -61,56 +41,65 @@ def get_to_start(ready)
     return game_ready_to_start
 end
 
-def easy_level_display(button)
+def display(level, user)
     watch = StopWatch::Timer.new
-    easy_display = Faker::Lorem.sentence
 
     system 'clear'
-    puts easy_display
+    puts level
     watch.mark ## Check time
-    easy_input = gets.chomp
+    input = gets.chomp
     watch.mark ## Check time
-    check = (easy_display == easy_input)
-    p check
+    check = (level == input)
+    user[:check_time] = watch.mark.join('').to_i.ceil
+    puts "#{user[:user_id]} made #{user[:check_time]} seconds"
 end
 
+def easy_level_display
+    easy_display = Faker::Lorem.sentence
+end
+
+def medium_level_display
+    easy_display = "#{Faker::Lorem.sentence} #{Faker::Lorem.sentence}"
+end
+
+def hard_level_display
+    easy_display = "#{Faker::Lorem.sentence} #{Faker::Lorem.sentence} #{Faker::Lorem.sentence}"
+end
 
 quit = false
 ready_to_go = false
+the_user_wants_to_quit = false
 
 ###########  Start  ##########
+
 until quit
-    confirmed = option_input("Your user ID is", "option: [ yes, no ]")
-    game_level = get_game_level(confirmed)
-    until ready_to_go
-        get_to_start(game_level)
-        case game_level
-        when "quit"
-            quit = true
-        when "easy"
-            
-        when "medium"
-
-        when "hard"
-
-        else
-            puts "Invalid input"
+    user = {}
+    # confirm = option_input("Your user ID is", "option: [ yes, no ]")
+    user[:user_id] = validate_input("Enter ID you want to use", "You must enter a User ID")
+    until the_user_wants_to_quit
+        p user
+        game_level = validate_input("Hello, you can choose game level", "option: [easy, medium, hard, quit]")
+        if validate_input("Enter \"s\" when you ready to go", "Invalid input") == "s"
+            # get_to_start(game_level)
+            case game_level
+            when "quit"
+                quit = true
+                the_user_wants_to_quit = true
+            when "easy"
+                display(easy_level_display, user)
+            when "medium"
+                display(medium_level_display, user)
+            when "hard"
+                display(hard_level_display, user)
+            else
+                puts "Invalid input"
+            end
         end
     end
 end
 
-    # if  
-    #     # puts "Hello #{user[:user_id]}, you can choose game level"    
-    #     puts "option: [easy, medium, hard, quit]"
-    # end
 
 
 
-
-# variable = {"hello" => "haha"}
-# def method(user)
-#     puts user
-# end
-# method(variable)
 
 
