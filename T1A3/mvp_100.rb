@@ -1,15 +1,16 @@
 require 'stop_watch'
 require 'csv'
 require 'faker'
+require 'colorize'
 
 # leader_board_array => csv data
 def validate_input(message, incorrect_message)
     input = ""
     while input == ""
-        puts message
+        puts message.colorize(:blue)
         input = gets.chomp
         if input == ""
-            puts incorrect_message
+            puts incorrect_message.colorize(:red)
         else
             return input
         end
@@ -31,25 +32,25 @@ def display(level, user, user_storage)
     arr_csv = []
 
     system 'clear'
-    puts level
+    puts level.colorize(:blue)
     watch.mark ## Check time
     input = gets.chomp
     watch.mark ## Check time
     check = (level == input)
     if check 
         user[:check_time] = watch.mark.join('').to_i.ceil
-        puts "#{user[:user_id]} made #{user[:check_time]} seconds"
+        puts "#{user[:user_id]} made #{user[:check_time]} seconds".colorize(:blue)
         File.open(user_storage, "a+"){
             |file| file.write("#{user[:user_id]},#{user[:check_time]}\n")
         }
         user_line = ["#{user[:user_id]}", "#{user[:check_time]}"]
         if get_leader_board(user_storage).include?(user_line)
-            puts "You are on Top 5"
+            puts "You are on Top 5".colorize(:blue)
         else
-            puts "You couldn't make Top 5"
+            puts "You couldn't make Top 5".colorize(:blue)
         end
     else
-        puts "You are wrong"
+        puts "You are wrong".colorize(:red)
     end
 end
 
@@ -94,22 +95,14 @@ until quit
                     break if validate_input("Do you want to play again\noption: [yes, no]", "Invailed input") == "no"
                 end
             end
-            leader = validate_input("Do you want to see leader boader\noption: [yes, no]", "Invailed input")
-            if leader == "yes"
-                p get_leader_board("#{game_level}_level.csv")
-                puts "Thank you for playing"
+            p get_leader_board("#{game_level}_level.csv")
+            puts "This is leader board (Top 5)".colorize(:blue)
+            puts "Thank you for playing~!".colorize(:blue)
                 the_user_wants_to_quit = true
-            else
-                puts "Thank you for playing"
-                the_user_wants_to_quit = true
-            end
     end
     quit = true
 end
 
 # update the csvs with the right data
 # leaderboard_csv is updated with the new leaderboard_array
-
-
-
 
