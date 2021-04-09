@@ -72,6 +72,7 @@ ready_to_go = false
 the_user_wants_to_quit = false
 check_level = false
 do_again = false
+arr2_csv = []
 difficulty = ["easy", "medium", "hard"]
 
 ###########  Start  ##########
@@ -88,7 +89,6 @@ until quit
                 puts "You need to Enter options Only".colorize(:red)
                 break
             end
-        
             until do_again
                 if validate_input("Enter \"s\" when you ready to go", "Invalid input") == "s"
                     case game_level
@@ -103,13 +103,15 @@ until quit
                     end
                     break if validate_input("Do you want to play again\noption: [yes, no]", "Invailed input") == "no"
                 end
-            end      
+            end
             p get_leader_board("#{game_level}_level.csv")
             puts "This is leader board (Top 5)".colorize(:blue)
             puts "Thank you for playing~!".colorize(:blue)
-                check_level = true              
-                the_user_wants_to_quit = true                
+                check_level = true
+                do_again = true
         end
+        
+        # the_user_wants_to_quit = true        
     end
     quit = true
 end

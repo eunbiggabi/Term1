@@ -74,9 +74,18 @@ check_level = false
 do_again = false
 difficulty = ["easy", "medium", "hard"]
 
+puts "This app will help you to improve your typing skill"
+puts "You can check 'file_name --help' for help"
+
+if ARGV[0] == "--help"
+    puts "Only way to quit this game is that entering 'quit' when you choose game-level option"
+    puts "otherwise you have to finish your program"
+    exit
+end
 ###########  Start  ##########
 
-until quit
+until quit 
+    
     user = {}
     user[:user_id] = validate_input("Enter ID you want to use", "You must enter a User ID")
     until the_user_wants_to_quit
@@ -105,7 +114,7 @@ until quit
                 end
             end      
             p get_leader_board("#{game_level}_level.csv")
-            puts "This is leader board (Top 5)".colorize(:blue)
+            puts "This is leader board".colorize(:blue)
             puts "Thank you for playing~!".colorize(:blue)
                 check_level = true              
                 the_user_wants_to_quit = true                
