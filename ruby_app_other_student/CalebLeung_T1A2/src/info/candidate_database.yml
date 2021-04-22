@@ -1,0 +1,141 @@
+---
+- :job_id: '1000'
+  :name: Barack Obama
+  :occupation: Ex-President USA
+  :email: classified information
+  :number: classified information
+  :address: classified information
+  :status: Applied
+  :notes: {}
+- :job_id: '1000'
+  :name: Harry Potter
+  :occupation: Wizard
+  :email: hpotter@hogwarts.com
+  :number: 0404 939 020
+  :address: Uncle's house under the stairs (for now...)
+  :status: Contacted
+  :notes:
+    '17-Nov-2019 12:04 PM ': Kinda Clumsy
+- :job_id: '1000'
+  :name: Naruto Uzumaki
+  :occupation: Ninja
+  :email: uzumaki_hokage@hotmail.com
+  :number: n/a - ninja's dont have phones
+  :address: 51 Street Konoha Village
+  :status: Contacted
+  :notes:
+    '16-Nov-2019 15:26 PM ': Can eat a surprising amount of ramen
+- :job_id: '1000'
+  :name: Thanos
+  :occupation: Destroyer of Worlds
+  :email: i-am-inevitable@gmail.com
+  :number: '0408 904 983'
+  :address: Area 51 Nevada Basement 2
+  :status: Disqualified
+  :notes: {}
+- :job_id: '1001'
+  :name: Jason Bourne
+  :occupation: Goverment Assassin
+  :email: classified information
+  :number: classified information
+  :address: Homeless
+  :status: Applied
+  :notes: {}
+- :job_id: '1000'
+  :name: Conor Mcgregor
+  :occupation: Professional MMA Fighter
+  :email: cmac@mcgregorentertainment.com
+  :number: 0400 999 333
+  :address: Dublin, Ireland
+  :status: Applied
+  :notes: {}
+- :job_id: '1000'
+  :name: Edward Snowden
+  :occupation: Wanted Criminal
+  :email: "******"
+  :number: "******"
+  :address: "******"
+  :status: Shortlisted
+  :notes: {}
+- :job_id: '1000'
+  :name: Colonel Sanders
+  :occupation: Owner of KFC
+  :email: kfc@kfc.com
+  :number: 07 3210 0219
+  :address: 91 Queen Street Myer Center, Brisbane City
+  :status: Applied
+  :notes: {}
+- :job_id: '1000'
+  :name: Tim Cook
+  :occupation: CEO of Apple
+  :email: tim.cook@apple.com
+  :number: 1300 321 456
+  :address: Cupertino, California
+  :status: Applied
+  :notes: {}
+- :job_id: '1000'
+  :name: Roger Federer
+  :occupation: Tennis Player
+  :email: the_fed_express@gmail.com
+  :number: 0400 859 304
+  :address: A Tennis Court Near You
+  :status: Applied
+  :notes: {}
+- :job_id: '1000'
+  :name: Scott Morrison
+  :occupation: Prime Minister of Australia
+  :email: scomo@aust.gov.com
+  :number: 0403 844 849
+  :address: Canberra, Australia
+  :status: Applied
+  :notes: {}
+- :job_id: '1000'
+  :name: Rubber Ducky
+  :occupation: Plastic toy
+  :email: rubberboi88@gmail.com
+  :number: '0498 048 543'
+  :address: Shauna's Backpack
+  :status: Screened
+  :notes: {}
+- :job_id: '1000'
+  :name: Snoop Lion
+  :occupation: Rapper
+  :email: snoop.lion@gmail.com
+  :number: '0489 766 111'
+  :address: 81 Beverly Hills, Los Angeles
+  :status: Applied
+  :notes: {}
+- :job_id: '1000'
+  :name: Phillip Yoo
+  :occupation: Student
+  :email: p.yoo@gmail.com
+  :number: '0492 994 004'
+  :address: 'Sunnybank '
+  :status: Contacted
+  :notes: {}
+- :job_id: '1001'
+  :name: Donald Trump
+  :occupation: 'President of USA '
+  :email: classified information
+  :number: classified information
+  :address: Trump Towers
+  :status: Applied
+  :notes: {}
+- :job_id: '1000'
+  :name: John Wick
+  :occupation: Assassin
+  :email: jwick@gmail.com
+  :number: '0483 029 777'
+  :address: The Continental
+  :status: Interview
+  :notes:
+    '21-Nov-2019 12:51 PM ': Wouldn't mess with his dog
+- :job_id: '1001'
+  :name: Bill Gates
+  :occupation: Co-Founder Microsoft
+  :email: billgates@microsoft.com
+  :number: '0495 828 030'
+  :address: America USA Murica
+  :status: Applied
+  :notes: {}
+#<File:0x00007fd9f115b878>

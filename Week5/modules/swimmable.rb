@@ -5,3 +5,4 @@ module Swimmable
         return "I'm swimming!"
     end
 end
+

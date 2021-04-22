@@ -1,0 +1,29 @@
+---
+- :id: '1000'
+  :title: Assistant Educator
+  :type: Permanent - Part Time
+  :salary: "$56,000"
+  :openings: '2'
+  :start_date: 01/02/20
+  :manager: Glen Kumar
+  :applications: 0
+  :status: Open
+- :id: '1001'
+  :title: Lead Educataor
+  :type: Permanent - Full Time
+  :salary: "$72,000"
+  :openings: '1'
+  :start_date: 01/12/19
+  :manager: Kanye West
+  :applications: 0
+  :status: Open
+- :id: '1002'
+  :title: Glen's Assistant
+  :type: Forever
+  :salary: "$5.60 / hour"
+  :openings: 1
+  :start_date: Immediate
+  :manager: Glen Johnson
+  :applications: 0
+  :status: Open
+#<File:0x00007f9b4596a590>

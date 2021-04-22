@@ -1,0 +1,21 @@
+---
+- :job_id: '1000'
+  :name: Thanos
+  :date: 10/11/19
+  :interviewers: Naveen & Glen & Ashleigh
+  :duration: 45 minutes
+  :location: Coder Academy Room 5
+  :status: Completed
+  :notes: 'Had strong feelings about halving the universe''s population. Probably
+    not a good culture fit because of that. '
+  :rating: 1
+- :job_id: '1000'
+  :name: John Wick
+  :date: 22/11/19
+  :interviewers: Glen & Naveen
+  :duration: 45 minutes
+  :location: Coder Academy Room 5
+  :status: Booked
+  :notes: ''
+  :rating: 0
+#<File:0x00007fd9f21007d8>
